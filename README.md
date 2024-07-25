@@ -13,17 +13,18 @@ To utilize this project it will be neccesary to install a few programs and libra
 ## python, gcc/g++ and gfortran
 These are compilers for all the languages that the program uses. python and GCC are fairly common 
 to have installed by default in Linux distributions, but gfortran not as much.
-### on Debian based distributions, run
-`sudo apt-get install gfortran`
-### On Arch-based distributions run 
-`sudo pacman -S gcc-fortran`
-### You will need to install gcc on MacOS. To do so run
+on Debian based distributions, run
+`sudo apt-get install gfortran`. 
+On Arch-based distributions run 
+`sudo pacman -S gcc-fortran`.
+
+You will need to install gcc on MacOS. To do so run
 `brew install gcc`
-### and then 
+and then 
 `brew install gfortran`. 
-### for Windows, run
+For Windows, run
 `choco install minGW`
-### and then
+and then
 `choco install gfortran`.
 
 ## Pillow
