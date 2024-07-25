@@ -60,10 +60,10 @@ redo the drawing click the clear button; this will **completely** clear the
 canvas and restart the simulation.
 
 # Credits
-Miguel Angel Uh Zapata
-Gortarez Blanco Manuel Eduardo
-Medina Lugo Fausto Misael
-Bruno
-Hannia
+- Miguel Angel Uh Zapata
+- Gortarez Blanco Manuel Eduardo
+- Medina Lugo Fausto Misael
+- Bruno
+- Hannia
 
 
