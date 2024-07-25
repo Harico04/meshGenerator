@@ -43,7 +43,8 @@ on Windows you will need to run
 `choco install make`, 
 and on MacOS
 `brew install make`
-
+## Gmsh and Paraview
+Rifatela Manuel
 # Compiling and running the project
 Esta parte le toca a Manuel :p 
 
