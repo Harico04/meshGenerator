@@ -1,0 +1,67 @@
+!wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww!
+!---------------------------------------------------------------------!
+!                     FILE OF COMMON VARIABLES                        !
+!                             Jul 2024                                !
+!---------------------------------------------------------------------!
+!wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww!
+!                                                                     !
+!      In this file we will describe all the common variables         !
+!      that we need in the program.                                   !
+!                                                                     !
+!---------------------------------------------------------------------!
+	
+!---------------------------------------------------------------------!
+!   ENTIERS                                                           !
+!---------------------------------------------------------------------!
+
+	INTEGER:: N_CELL0,N_VERT,N_CELL
+	INTEGER:: N_CELLexact,N_CELLextra,N_CELLghost
+	INTEGER:: N_HBMAX,N_QBMAX,N_WBMAX,N_SBMAX
+	INTEGER:: NRES,ISAVE,NC_REF
+	INTEGER:: NT,Kvol,NC,NV,KV,KV1,KV2,MK
+	INTEGER:: N_WB,N_HB,N_QB,N_SB,NCELL_QB,N_SAMPL
+	INTEGER:: ModPrint
+	INTEGER:: CountWLIterations,CornerIndex
+!   -------------------
+	REAL*8 :: o0,o1,o2,o3,o4,o5,o6,o7,o8,o9,o05,o025
+	REAL*8 :: TIME,TPRINT,TPO,TMAX,DT
+	REAL*8 :: HWO,WLO,QXO,QYO,PI,UXO,UYO
+	REAL*8 :: H00,GAMA,GRA,OMEGA,COEFN,AHDIFF
+	REAL*8 :: Lnon,Tnon
+!   -------------------
+	REAL*8 :: XDIni,XDFin,YDIni,YDFin
+	REAL*8 :: WLvalueL,WLvalueR
+!   -------------------				
+	INTEGER:: DisplayOnceThis
+			
+!---------------------------------------------------------------------!
+!  COMMONS                                                            !
+!---------------------------------------------------------------------!
+
+	COMMON/PARAM/ISAVE,NC_REF
+	COMMON/MESH/N_WB,N_HB,N_QB,NCELL_QB,N_SAMPL,N_CELL0,N_VERT,N_CELL,
+     *     	N_CELLexact,N_CELLextra,N_CELLghost,N_SB,
+     *     	N_HBMAX,N_QBMAX,N_WBMAX,N_SBMAX,
+     *     	CountWLIterations,CornerIndex,DisplayOnceThis,NT,
+     *     	ModPrint
+
+	COMMON/TEMPS/TMAX,TIME,DT,TPRINT
+	
+	COMMON/INITI/WLO,QXO,QYO,H00,GAMA,GRA,OMEGA,COEFN,AHDIFF,
+     *     	Lnon,Tnon,UXO,UYO,HWO,
+     *     	XDIni,XDFin,YDIni,YDFin,WLvalueL,WLvalueR
+     
+!---------------------------------------------------------------------!
+!     BLOCK DATA                                                      !
+!---------------------------------------------------------------------!
+
+	DATA o0/0.d0/,o1/1.d0/,o2/2.d0/,o3/3.d0/,
+     $	     o4/4.d0/,o5/5.d0/,o6/6.d0/,o7/7.d0/,
+     $	     o8/8.d0/,o9/9.d0/,o05/.5d0/,o025/.25d0/
+	DATA PI/3.141596/
+
+!wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww!
+!---------------------------------------------------------------------!
+!                                END                                  !
+!---------------------------------------------------------------------!
+!wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww!

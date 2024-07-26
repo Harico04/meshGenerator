@@ -1,0 +1,9 @@
+----------------------------------------------------
+INPUT PARAMETERS FOR THE TEST CASE: CYLINDER
+----------------------------------------------------
+SIMULATION DURATION IN SECOND	 TMAX=:   20.0   
+TIME STEP                          DT=:   0.005
+RESULT OUTPUT FOR EVERY	       TPRINT=:   0.1
+----------------------------------------------------
+DIFFUSIVE COEFFICIENT          AHDIFF=:   0.1
+
