@@ -54,13 +54,6 @@ RenderAllViews()
 
 # Configurar la animación
 scene = GetAnimationScene()
-
-while True:
-    for i in range(20 - 1):
-        scene.GoToNext()
-        time.sleep(.01)
-    scene.GoToFirst()
-        
-# scene.NumberOfFrames = 100  # More Frames implies more duration in the animation.
-# scene.Loop = True
-# scene.Play()
+scene.Loop = True
+scene.NumberOfFrames = 20
+scene.Play()

@@ -607,9 +607,9 @@ class GUI:
     def exportPoints(self):
         file=open('points.geo','w')
         #Write the parameters to the file
-        file.write('tm = 0.25;\n')
-        file.write('tmr = 0.1;\n')
-        file.write('tmr2 = 0.05;\n')
+        file.write('tm = 0.1;\n')
+        file.write('tmr = 0.05;\n')
+        file.write('tmr2 = 0.025;\n')
 
         #Write the points of the external domain, agreed to be 4x2
         file.write('Point(1) = {0.0, 0.0, 0.0, tm};\n');
