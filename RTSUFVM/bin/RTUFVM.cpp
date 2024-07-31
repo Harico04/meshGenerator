@@ -4,6 +4,7 @@ extern "C" {
     extern void __mained_MOD_initialconditions();
     extern void __mained_MOD_update(double MagU[]);
     extern void __mained_MOD_saveparaview();
+    extern void __mained_MOD_readviscosity();
     extern void __mained_MOD_finalization();
 }
 
@@ -53,8 +54,9 @@ int main(int argc, char *argv[] ){
 
     for(;cont < NoSteps; ++cont){
         __mained_MOD_update(MagU);
-        if(cont % 2 != 0) continue;
-        printf("Contador %i: ejecutado desde C++ \n",cont); 
+        if(cont % 4 != 0) continue;
+        printf("Contador %i: ejecutado desde C++ \n",cont);
+        __mained_MOD_readviscosity();
         __mained_MOD_saveparaview(); 
     }
 

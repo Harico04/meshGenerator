@@ -51,13 +51,14 @@ camera.Zoom(2.3)  # Apply zoom (adjust as needed)
 
 RenderAllViews()
 
-# Add streamlines
+# Add streamlines with a limit of 100 lines
 streamTracer = StreamTracer(Input=reader,
                             SeedType='Line')
 streamTracer.SeedType.Point1 = [0, 0, 0]
 streamTracer.SeedType.Point2 = [4, 4, 0]
 streamTracer.Vectors = ['POINTS', 'vector_U']
 streamTracer.MaximumStreamlineLength = 10.0
+streamTracer.SeedType.Resolution = 100  # Set the number of streamlines to 100
 
 # Show the streamlines
 streamTracerDisplay = Show(streamTracer, renderView)
@@ -76,5 +77,5 @@ Render()
 # Configure the animation
 scene = GetAnimationScene()
 scene.Loop = True
-scene.NumberOfFrames = 20
+scene.NumberOfFrames = 30
 scene.Play()

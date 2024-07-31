@@ -768,7 +768,7 @@ class GUI:
 #*******************************************************#
     #This method changes the viscosity value of the fluid
     def changeViscosity(self,value):
-        f=open('viscosity.txt','w')
+        f=open('../RTSUFVM/input/Example_Cylinder/viscosity.txt','w')
         f.write(f'Viscosity: {value}')
         f.close()
 #*******************************************************#

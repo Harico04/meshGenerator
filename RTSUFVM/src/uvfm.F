@@ -70,6 +70,7 @@
       real*8 :: XO,YO,DXDY,DXDY2,DXODY2,AA,DX,DY,DXCV,DYCV
 !     ----------------------------
       character*50 TITRE
+      character*10 TITREAH
       character*4 TITRE0(10)
       character*4 TITRE1(10)
       character*4 TITRE2(10)
@@ -1158,7 +1159,24 @@
          CALL OUTSAV(WLVN,HWV,UVERT,VVERT,X,Y,NBE_V,NO_VP,NRES) !mod(NRES, #) hace que solo genera archivos del 0 al # .vtk
       !ENDIF
 
-      END SUBROUTINE saveparaview
+         END SUBROUTINE saveparaview
+
+!*********************************************************************!
+!                                                                     !
+!             III-C) Read the dispersion parameter AH                 !
+!                                                                     !
+!*********************************************************************!
+      
+      SUBROUTINE readviscosity
+
+#     ifdef KeyDiff_UseAHDIFF
+      open(13,FILE='Example_Cylinder/viscosity.txt',STATUS='OLD')
+      read(13,'(a10,F15.5)') TITREAH,AHDIFF
+      close(13)
+      print*,'AHDIFF=',AHDIFF
+#     endif
+
+      END SUBROUTINE readviscosity
       
 !*********************************************************************!
 !                                                                     !
