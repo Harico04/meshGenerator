@@ -1,4 +1,4 @@
-# meshGenerator
+# MeshGenerator
 This program offers a GUI to paint/draw any loop that the user desires, and then
 creates a real time simulation of said object being submerged in a fluid of certain 
 speed and viscosity. It was Developed during the summer program DELFIN 2024 as a project
@@ -27,15 +27,25 @@ For Windows, run
 and then
 `choco install gfortran`.
 
+## ParaView 
+In order to see the simulations we need Paraview, you can install from the web. 
+https://www.paraview.org/download/
+
+##  Gmsh 
+A mesh generator given a shape or a draw. For install it on linux, just run:  
+`sudo pacman -S gmsh`.
+
 ## Pillow
 This project works with the lecture and creation of images, so the Pillow library from
 Python will be neccessary. To install it, run 
 `pip install pillow`
+
 ## Tkinter
 Also, most Python versions already have Tkinter installed, but if the library is missing
 From your environment run 
 `pip install tk`
 As well.
+
 ## Make
 Make is strongly recommended to compile the project.A lot of Linux distributions already have 
 gcc/make installed by default, and if you already have gcc you should have make as well. If not,
@@ -43,10 +53,12 @@ on Windows you will need to run
 `choco install make`, 
 and on MacOS
 `brew install make`
-## Gmsh and Paraview
-Rifatela Manuel
+
 # Compiling and running the project
-Esta parte le toca a Manuel :p 
+We've wrote a bash script to simplify the compiling and running the project. This script is run.sh.
+For executing it, just run  
+`./run.sh`
+in the root of the project.
 
 # Using the project
 Once it is running, the following window will be displayed
