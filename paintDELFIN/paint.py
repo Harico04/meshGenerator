@@ -302,7 +302,7 @@ class GUI:
                         objectTag=self.cnv.find_overlapping(*bbox)
                         if(objectTag):
                             for object in objectTag:
-                                if object in bboxes or object in self.currentLoop.loopShapes[-6:] or object==self.bgID:
+                                if object in bboxes or object in self.currentLoop.loopShapes[-15:] or object==self.bgID:
                                     continue
                                 for shape in self.currentLoop.loopShapes:
                                     self.cnv.itemconfig(shape,fill='red')
